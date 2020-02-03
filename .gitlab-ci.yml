@@ -3,11 +3,20 @@ image: python:alpine
 before_script:
   - pip install -r requirements.txt
 
+build:
+  script:
+    - mkdocs build
+  only:
+    - branches
+  except:
+    - master
+
 pages:
   script:
-  - mkdocs build -d build
+    - mkdocs build
+    - mv site public
   artifacts:
     paths:
-    - public
+    - public/
   only:
-  - master
+    - master
