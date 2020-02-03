@@ -1,4 +1,10 @@
 site_name: Lama Corp. Infrastructure
 site_url: https://doc.lama-corp.space
+repo_url: https://gitlab.com/lama-corp/infra/doc
 theme:
   name: 'material'
+  palette:
+    primary: 'orange'
+    accent: 'orange'
+  logo:
+    icon: 'cloud_off'
