@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# Introduction
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+The Lama Corp. infrastructure is a pretty simple one. This website is supposed
+to provide some helpful information for the user as well as the administrator.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Browse a bit, search a bit, and if something is missing, do not hesitate to
+submit an issue by clicking the button in the top-right corner :D
