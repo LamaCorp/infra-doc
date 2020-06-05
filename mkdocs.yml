@@ -6,5 +6,5 @@ theme:
   palette:
     primary: 'orange'
     accent: 'orange'
-  logo:
-    icon: 'cloud_off'
+  icon:
+    logo: 'material/cloud-off-outline'
