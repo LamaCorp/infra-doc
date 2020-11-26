@@ -1,20 +1,25 @@
-image: python:3.8-buster
+image: nixpkgs/nix-flakes
+
+stages:
+  - build
+  - deploy
 
 before_script:
-  - pip install -r requirements.txt
+  - mkdir -p /etc/nix
+  - echo "experimental-features = nix-command flakes ca-references" >> /etc/nix/nix.conf
 
 build:
+  stage: build
+  needs: []
   script:
-    - mkdocs build
-  only:
-    - branches
-  except:
-    - master
+    - nix build .
 
 pages:
+  stage: deploy
+  needs: ["build"]
   script:
-    - mkdocs build
-    - mv site public
+    - nix build .
+    - cp result/share/html public
   artifacts:
     paths:
     - public/
