@@ -19,7 +19,7 @@ pages:
   needs: ["build"]
   script:
     - nix build .
-    - cp result/share/html public
+    - cp -r result/share/html public
   artifacts:
     paths:
     - public/
